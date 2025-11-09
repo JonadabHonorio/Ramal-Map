@@ -1,0 +1,128 @@
+
+  :root {
+    --azul-escuro: #0D47A1;
+    --azul: #1976D2;
+    --amarelo: #FFC107;
+    --fundo: #F4F8FB;
+    --branco: #FFFFFF;
+    --cinza-borda: #E0E0E0;
+    --texto: #1E293B;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    height: 100%;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--fundo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ======== Container central ======== */
+  .container {
+    background: var(--branco);
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+  }
+
+  h1 {
+    color: var(--azul-escuro);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  p.subtitle {
+    color: #475569;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+  }
+
+  /* ======== Campo de busca ======== */
+  .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    flex: 1;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1px solid var(--cinza-borda);
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+  }
+
+  input:focus {
+    border-color: var(--azul);
+    box-shadow: 0 0 0 3px rgba(25,118,210,0.15);
+  }
+
+  button {
+    background: var(--azul-escuro);
+    color: var(--branco);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background: var(--azul);
+  }
+
+  /* ======== Resultados ======== */
+  ul {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+    text-align: left;
+  }
+
+  li {
+    background: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-left: 5px solid var(--amarelo);
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    color: var(--texto);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+
+  .empty {
+    text-align: center;
+    color: #6B7280;
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+
+  /* ======== Responsivo ======== */
+  @media (max-width: 480px) {
+    .container {
+      padding: 25px;
+    }
+
+    .search-box {
+      flex-direction: column;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
