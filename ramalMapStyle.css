@@ -112,7 +112,8 @@
     margin-top: 15px;
   }
 
-  /* ======== Responsivo ======== */
+  /* ======== Responsividade ======== */
+
   @media (max-width: 480px) {
     .container {
       padding: 25px;
