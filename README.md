@@ -24,8 +24,8 @@ Com isso, o sistema:
 | Tecnologia | Finalidade |
 |-------------|-------------|
 | **HTML5** | Estrutura da aplicação web |
-| **CSS3** | Estilização da interface (tema azul, amarelo e branco, alinhado ao segmento da saúde) |
-| **JavaScript (ES6)** | Lógica da aplicação e integração com o banco de dados |
+| **CSS3** | Estilização da interface  |
+| **JavaScript** | Lógica da aplicação e integração com o banco de dados |
 | **Firebase Firestore** | Banco de dados em nuvem utilizado para armazenar os ramais |
 
 ---
